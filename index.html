@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Reto dia5</title>
+</head>
+
+<body>
+    <div class="cuerpo">
+        <form class="form">
+            <div class="form_inputs">
+                <input type="text" id="nombre" placeholder='Nombre'>
+                <input type="number" id="edad" placeholder='Edad'>
+                <input type="number" id="peso" placeholder='Peso'>
+                <input type="number" id="altura" placeholder='Altura'>
+                <div class="retirado">
+                    <label>Retirado?</label>
+                    <input type="checkbox" class="checkbox1" id="retirado">
+                </div>
+                <input type="text" id="nacionalidad" placeholder='Nacionalidad'>
+                <input type="number" id="numOscars" placeholder='Número de Oscars'>
+                <input type="text" id="profesion" placeholder='Profesión'>
+            </div>
+
+            <div class="botones">
+                <input class="boton" onclick="getProf()" type="reset" value="Mostrar">
+                <input class="boton" onclick="postProf()" type="reset" value="Crear">
+                <input class="boton" onclick="putProf()" type="reset" value="Actualizar">
+                <input class="boton" onclick="deleteProf()" type="reset" value="Eliminar">
+            </div>
+        </form>
+
+        <div class="profesionales" id="profesionalesEnLista" >
+            
+                
+                    <!-- <h4>Nombre:</h4>
+                    <h4>Edad:</h4>
+                    <h4>Peso:</h4>
+                    <h4>Altura:</h4>
+                    <h4>Retirado:</h4>
+                    <h4>Nacionalidad:</h4>
+                    <h4>Oscars:</h4>
+                    <h4>Profesión:</h4> -->
+            
+        
+        </div>
+
+
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
